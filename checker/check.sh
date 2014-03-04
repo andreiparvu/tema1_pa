@@ -16,7 +16,7 @@ run_problem() {
     cp $name$i.in date.in
     cp $name$i.ok res.ok
 
-    if [ -z "`cat Makefile | grep run-p2`" ]; then
+    if [ -z "`cat Makefile | grep run-p$id`" ]; then
       echo "Test $i problema $id .......... 0/5 - Regula make inexistenta!"
       continue
     fi
