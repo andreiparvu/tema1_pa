@@ -5,6 +5,9 @@
 
 using namespace std;
 
+#define ZERO 0
+#define TOTAL 5
+
 void die(int punctaj, const char *msg) {
   freopen("score.verif", "wt", stdout);
   printf("%d", punctaj);
@@ -28,14 +31,14 @@ int main() {
   int raspuns_student, raspuns_corect;
   int ret = fscanf(student, "%d", &raspuns_student);
   if (ret == 0) {
-    die(0, "Fisier de iesire gol");
+    die(ZERO, "Fisier de iesire gol");
   }
   fscanf(corect, "%d", &raspuns_corect);
 
   if (raspuns_corect != raspuns_student) {
-    die(0, "Raspuns gresit!");
+    die(ZERO, "Raspuns gresit!");
   } else {
-    die(5, "Corect!");
+    die(TOTAL, "Corect!");
   }
 
   return 0;
