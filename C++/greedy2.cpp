@@ -51,9 +51,9 @@ vector<int> slavesM;
 inline void citestePereche(int &rez, int i) {
   int master,slave;
   scanf("%d%d",&master,&slave);
-  if (master < slave) {
-    swap(master,slave);
-  }
+  //if (master < slave) {
+    //swap(master,slave);
+  //}
   rez += master; //initial toti sunt masteri
   multime.insert(multime.begin(),make_pair(master-slave, i)); //adaug in set diferenta dintre cele 2 valori
   //pentru a afla o cuplare corecta se va adauga in set o pereche (diferenta,id) si nu se va mai strica N;

@@ -41,9 +41,6 @@ int main() {
   fscanf(input,"%d",&N);
   for (int i = 0; i < N; ++i) {
     fscanf(input,"%d %d", &m, &s);
-    if (m < s) {
-      swap(m,s);
-    }
     master.push_back(m);
     slave.push_back(s);
   }
@@ -81,7 +78,7 @@ int main() {
     rez -= slave[s];
   }
   if (rez !=0 ) {
-    die(PARTIAL, "Suma sau configuratie incorecta\n");
+    die(PARTIAL, "Suma configuratiei nu corespunde cu rezultatul corect!\n");
   }
 
   die(TOTAL, "Raspuns corect!");

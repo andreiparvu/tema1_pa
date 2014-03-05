@@ -12,6 +12,9 @@ int main() {
   int n;
   pair<int, int> cost[NMAX];
 
+  freopen("date.in", "rt", stdin);
+  freopen("date.out", "wt", stdout);
+
   scanf("%d", &n);
   for (int i = 1; i <= n; i++) {
     scanf("%d%d", &cost[i].master, &cost[i].slave);

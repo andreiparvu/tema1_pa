@@ -63,7 +63,6 @@ public class Greedy {
       rez += p.master;
 
       slaves[p.slave] = true;
-      System.out.println(p.slave);
     }
 
     try {
@@ -77,7 +76,6 @@ public class Greedy {
         for (; slaves[p2] == false; p2++);
 
         pw.println(p1 + " " + p2);
-        System.out.println(p1 + " " + p2);
       }
       pw.flush();
     } catch (FileNotFoundException ex) {}
