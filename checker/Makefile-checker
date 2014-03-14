@@ -1,8 +1,8 @@
 build-checker:
-	g++ -o checker1 -Wall checker1.cpp -lm
-	g++ -o checker2 -Wall checker2.cpp -lm
+	g++ -o checker1 -Wall checker_src/checker1.cpp -lm
+	g++ -o checker2 -Wall checker_src/checker2.cpp -lm
 	cp checker2 checker3
-	gcc -o tracker -Wall tracker.c -lm
+	gcc -o tracker -Wall checker_src/tracker.c -lm
 
 clean:
 	rm -f checker1 checker2 checker3 tracker
